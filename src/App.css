@@ -1,5 +1,6 @@
-.App {
-}
+/* .App {
+  /* display: flex;
+  flex-direction: column; */
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -33,12 +34,12 @@
   line-height: 10px;
 }
 
-.Youtube-log {
-  width: 150px;
+.Player {
+  margin: 60px auto;
 }
 
-.App-link {
-  color: #61dafb;
+.Youtube-log {
+  width: 150px;
 }
 
 @keyframes App-logo-spin {
