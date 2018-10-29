@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "./Components/Header";
 import Player from "./Components/Player";
+import Searchbar from "./Components/Searchbar";
 import "./App.css";
 
 class App extends Component {
@@ -9,6 +10,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Player />
+        <Searchbar />
       </div>
     );
   }

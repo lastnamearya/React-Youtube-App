@@ -4,7 +4,7 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 12vmin;
+  height: 10vmin;
 }
 
 .header {
@@ -17,8 +17,8 @@
 
 .header-bar {
   color: rgba(255, 255, 255, 0.9);
-  margin-top: 10px;
-  height: 10vh;
+  margin-top: 1em;
+  height: 9vh;
   background: rgb(255, 0, 0);
   display: flex;
   justify-content: center;
@@ -34,8 +34,55 @@
   line-height: 10px;
 }
 
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 60vh;
+  margin: 0 auto;
+}
+
+input[type="text"] {
+  border-width: 0 0 1px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border-style: none;
+  text-shadow: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  outline: none;
+  height: 25px;
+  flex-grow: 2;
+  box-shadow: 0 10px 10px rgba(200, 200, 200, 0.2);
+}
+
+input[type="text"]:focus {
+  /* border: solid 2px red; */
+  outline: -webkit-focus-ring-color auto 5px;
+  outline-color: red;
+  /* outline: 1px solid red; */
+}
+
+input[type="submit"] {
+  display: block;
+  flex-grow: 1;
+  margin-left: 10px;
+  font-size: 0.8em;
+  padding: 10px;
+  background-color: red;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  height: 42px;
+}
+
 .Player {
-  margin: 60px auto;
+  margin: 60px auto 30px;
 }
 
 .Youtube-log {
