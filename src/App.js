@@ -10,14 +10,7 @@ const YoutubeAPI = "AIzaSyB_AMcpW4h_F3BkYsxFYQnCRY2KDj09F5s";
 class App extends Component {
   state = {
     search: "React Conf",
-    results: [
-      {
-        id: {
-          kind: "youtube#video",
-          videoId: "V-QO-KO90iQ"
-        }
-      }
-    ]
+    results: []
   };
 
   searchResults = () => {
@@ -41,12 +34,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Player
-          url={
-            "https://www.youtube.com/watch?v=" +
-            this.state.results[0].id.videoId
-          }
-        />
+        <Player url={this.state.results} />
         <Searchbar />
       </div>
     );

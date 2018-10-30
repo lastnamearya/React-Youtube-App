@@ -12,8 +12,31 @@ class Player extends Component {
   // };
 
   render() {
-    return <ReactPlayer url={this.props.url} className="Player" />;
+    return (
+      <div>
+        {this.props.url.length > 0 ? (
+          <ReactPlayer
+            url={"https://www.youtube.com/watch?v=kz3nVya45uQ"}
+            className="Player"
+          />
+        ) : (
+          <Loading />
+        )}
+      </div>
+      // <ReactPlayer
+      //   url={
+      //     searchList.length === 5
+      //       ? "https://www.youtube.com/watch?v=kz3nVya45uQ"
+      //       : "Loading"
+      //   }
+      //   className="Player"
+      // />
+    );
   }
 }
+
+const Loading = () => {
+  return <div>Loading...</div>;
+};
 
 export default Player;
