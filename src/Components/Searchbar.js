@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 
 class Searchbar extends Component {
-  state = {
-    value: ""
-  };
+  searchInput = React.createRef();
 
   handleChange = event => {
     this.setState({
@@ -13,18 +11,18 @@ class Searchbar extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    this.props.changeSearch(this.state.value);
-    this.setState({ value: "" });
+    this.props.changeSearch(this.searchInput.current.value);
+    event.currentTarget.reset();
   };
 
   render() {
     return (
       <form className="search-form" onSubmit={this.handleSubmit}>
         <input
-          // value={this.state.value}
           type="text"
           placeholder="Search a YouTube video..."
-          onChange={this.handleChange}
+          ref={this.searchInput}
+          // onChange={this.handleChange}
         />
 
         <input type="submit" value="Search" />
