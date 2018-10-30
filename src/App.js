@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Header from "./Components/Header";
-import Player from "./Components/Player";
+import PlayerList from "./Components/Player";
 import Searchbar from "./Components/Searchbar";
 import searchYoutube from "youtube-api-search";
 import "./App.css";
@@ -34,7 +34,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Player url={this.state.results} />
+        <PlayerList data={this.state.results} />
         <Searchbar />
       </div>
     );
