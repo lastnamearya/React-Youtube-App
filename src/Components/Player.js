@@ -7,12 +7,12 @@ const PlayerList = props => {
   return (
     <div>
       {data.length > 0 ? (
-        data.map((key, index) => {
+        data.map(video => {
           return (
             <ReactPlayer
-              url={`https://www.youtube.com/watch?v=${key.id.videoId}`}
+              url={`https://www.youtube.com/watch?v=${video.id.videoId}`}
               className="Player"
-              key={index}
+              key={video.id.videoId}
             />
           );
         })
