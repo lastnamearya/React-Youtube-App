@@ -21,7 +21,7 @@ class Searchbar extends Component {
     return (
       <form className="search-form" onSubmit={this.handleSubmit}>
         <input
-          value={this.state.value}
+          // value={this.state.value}
           type="text"
           placeholder="Search a YouTube video..."
           onChange={this.handleChange}

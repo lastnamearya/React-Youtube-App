@@ -48,12 +48,11 @@ input[type="text"] {
   border-radius: 5px;
   border-style: none;
   text-shadow: none;
-  text-transform: uppercase;
   letter-spacing: 2px;
   outline: none;
   height: 25px;
   flex-grow: 2;
-  box-shadow: 0 10px 10px rgba(200, 200, 200, 0.2);
+  box-shadow: 0 10px 10px rgba(226, 201, 201, 0.2);
 }
 
 input[type="text"]:focus {

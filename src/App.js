@@ -14,7 +14,15 @@ class App extends Component {
   };
 
   handleSearch = searchTerm => {
-    console.log(searchTerm);
+    if (searchTerm) {
+      this.setState(() => {
+        return {
+          search: searchTerm,
+          results: []
+        };
+      });
+      this.searchResults();
+    }
   };
 
   searchResults = () => {
@@ -22,8 +30,10 @@ class App extends Component {
       { key: YoutubeAPI, term: this.state.search },
       function(data) {
         console.log(data);
-        this.setState({
-          results: data
+        this.setState(() => {
+          return {
+            results: data
+          };
         });
       }.bind(this)
     );

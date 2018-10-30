@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Loading from "./Loading";
 import ReactPlayer from "react-player";
 
