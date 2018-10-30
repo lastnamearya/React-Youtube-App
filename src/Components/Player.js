@@ -17,7 +17,9 @@ class Player extends Component {
       <div>
         {this.props.url.length > 0 ? (
           <ReactPlayer
-            url={"https://www.youtube.com/watch?v=kz3nVya45uQ"}
+            url={`https://www.youtube.com/watch?v=${
+              this.props.url[0].id.videoId
+            }`}
             className="Player"
           />
         ) : (
