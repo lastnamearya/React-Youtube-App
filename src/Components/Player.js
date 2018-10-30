@@ -4,8 +4,9 @@ import ReactPlayer from "react-player";
 
 const PlayerList = props => {
   const data = props.data;
+
   return (
-    <div>
+    <div className="Player-List">
       {data.length > 0 ? (
         data.map(video => {
           return (

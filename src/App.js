@@ -13,6 +13,10 @@ class App extends Component {
     results: []
   };
 
+  handleSearch = searchTerm => {
+    console.log(searchTerm);
+  };
+
   searchResults = () => {
     searchYoutube(
       { key: YoutubeAPI, term: this.state.search },
@@ -34,8 +38,8 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <Searchbar changeSearch={this.handleSearch} />
         <PlayerList data={this.state.results} />
-        <Searchbar />
       </div>
     );
   }

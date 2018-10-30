@@ -13,12 +13,15 @@ class Searchbar extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
+    this.props.changeSearch(this.state.value);
+    this.setState({ value: "" });
   };
 
   render() {
     return (
-      <form className="search-form" onSubmit={this.handeSubmit}>
+      <form className="search-form" onSubmit={this.handleSubmit}>
         <input
+          value={this.state.value}
           type="text"
           placeholder="Search a YouTube video..."
           onChange={this.handleChange}

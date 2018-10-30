@@ -38,8 +38,8 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 60vh;
-  margin: 0 auto;
+  max-width: 80vh;
+  margin: 30px auto;
 }
 
 input[type="text"] {
@@ -82,7 +82,7 @@ input[type="submit"] {
 }
 
 .Player {
-  margin: 60px auto 30px;
+  margin: 40px auto 30px;
 }
 
 .Youtube-log {
