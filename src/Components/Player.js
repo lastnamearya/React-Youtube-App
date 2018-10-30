@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import Loading from "./Loading";
 import ReactPlayer from "react-player";
 
 class Player extends Component {
@@ -34,9 +35,5 @@ class Player extends Component {
     );
   }
 }
-
-const Loading = () => {
-  return <div>Loading...</div>;
-};
 
 export default Player;
