@@ -10,7 +10,7 @@ const Header = () => {
         <img src={youtube} className="Youtube-log" alt="Youtube" />
       </div>
       <div className="header-bar">
-        <h2 className="header-title">React Movie App</h2>
+        <h2 className="header-title">React Youtube App</h2>
       </div>
     </React.Fragment>
   );
