@@ -21,13 +21,13 @@ class App extends Component {
           results: []
         };
       });
-      this.searchResults();
+      this.searchResults(searchTerm);
     }
   };
 
-  searchResults = () => {
+  searchResults = term => {
     searchYoutube(
-      { key: YoutubeAPI, term: this.state.search },
+      { key: YoutubeAPI, term: term },
       function(data) {
         console.log(data);
         this.setState(() => {
@@ -40,7 +40,7 @@ class App extends Component {
   };
 
   componentDidMount() {
-    this.searchResults();
+    this.searchResults(this.state.search);
     console.log(this.state);
   }
 
